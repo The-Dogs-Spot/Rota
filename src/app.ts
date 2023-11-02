@@ -1,6 +1,9 @@
 import express, { Express } from 'express';
 import path from 'path';
 import { routes } from './routes'
+import dotenv from 'dotenv';
+
+<void><unknown>dotenv.config();
 
 let app: Express = express();
 const port = 3000;

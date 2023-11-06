@@ -5,7 +5,8 @@ export const userSchema: Schema = new Schema({
     username: String,
     forename: String,
     surname: String,
-    password: String, // with salt 
+    password: String, // with salt
+    token: String,
     salt: String,
     isAdmin: Boolean,
     resetImmediate: Boolean

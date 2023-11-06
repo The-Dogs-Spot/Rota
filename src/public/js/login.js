@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 const usernameInput = document.getElementById("username-input");
 const passwordInput = document.getElementById("password-input");
 
@@ -23,5 +21,5 @@ async function getToken(username, password) {
 }
 
 function login() {
-    
+
 }

@@ -2,6 +2,7 @@ import express, { Express } from 'express';
 import path from 'path';
 import { routes } from './routes'
 import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 
 <void><unknown>dotenv.config();
 
@@ -17,4 +18,6 @@ app.use("/", routes)
 
 app.listen(port, () => {
     console.info(`Listening on port ${port}`);
+    mongoose.connect(process.env.DB_LOGIN);
+    console.info("Connected to database successfully!");
 });
